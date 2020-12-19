@@ -1,0 +1,297 @@
+body{   
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    top: 0;
+    position: fixed;
+}
+
+footer{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    position: fixed;
+    align-items: start;
+}
+
+a{
+    text-decoration: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 80%;
+}
+
+p{
+    margin-left: 3%;
+    margin-right: 3%;
+    letter-spacing: .03em;
+    font-size: 90%;
+}
+
+.row{
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.opaque{
+    opacity: 0%;
+}
+
+.black{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.76);
+    text-align: center;
+}
+
+.white{
+    color: white;
+}
+
+.blue{
+    color: turquoise;
+}
+
+.backgroundImg{
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: sans-serif;
+    font-size: 120%;
+    letter-spacing: .2em;
+    font-weight: 900;
+}
+
+.motto{
+    letter-spacing: .1em;
+    font-size: 80%;
+    margin-top: 2%;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.align{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40%;
+    width: 90%;
+    margin: auto;
+}
+
+.body h2{
+    margin-top: 5%;
+    letter-spacing: .15em;
+    line-height: 1.5em;
+    font-size: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.btn{
+    letter-spacing: .1em;
+    padding: 1.5%;
+    border: none;
+    background-color: rgba(0, 141, 160, 0.685);
+    margin-left: 32%;
+    margin-right: 32%;
+    justify-self: center;
+    margin-bottom: 5%;
+}
+
+.btn2{
+    letter-spacing: .1em;
+    padding: 1%;
+    border: none;
+    background-color: rgba(0, 141, 160, 0.685);
+    margin: auto;
+    margin-bottom: 4%;
+    width: 20%;
+}
+
+.btn3{
+    margin-right: 85%;
+    letter-spacing: .1em;
+    padding: 1%;
+    border: none;
+    background-color: rgba(0, 141, 160, 0.685);
+    margin-top: 4%;
+    width: 30px;
+}
+
+.or{
+    margin-top: 1%;
+}
+
+.hover:hover{
+    background-color: rgba(64, 224, 208, 0.692);
+}
+
+.facebook{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.modal{
+    width: 90%;
+    margin: auto;
+}
+
+.none{
+    display: none;
+}
+
+.modal h2{
+    letter-spacing: .1em;
+    font-size: 100%;
+    margin-bottom: 0;
+}
+
+.modaltext{
+    width: 90%;
+    margin: auto;
+    text-align: start;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    letter-spacing: .1em;
+}
+
+
+@media all and (max-height: 950px){
+    .facebook{
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    footer{
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 1%;
+    }
+    
+    a{
+        margin: auto;
+    }
+}
+
+@media all and (max-height: 733px){
+
+    .modaltext{
+        font-size: 85%;
+        line-height: 1.05em;
+    }
+
+    .facebook{
+        max-width: 20px;
+        max-height: 30px;
+    }
+
+    a{
+        margin-top: .1%;
+        margin-bottom: .1%;
+    }
+
+    .modal{
+        margin-bottom: none;
+    }
+
+}
+
+@media all and (max-height: 576px){
+
+    .title{
+        margin-top: 1%;
+        margin-bottom: 1%;
+        font-size: 90%;
+    }
+
+    .motto{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    .modal h2{
+        font-size: 80%;
+        margin-top: .5%;
+        margin-bottom: .5%;
+    }
+
+    .modaltext{
+        font-size: 75%;
+        margin-top: .5%;
+        margin-bottom: .5%;
+    }
+
+    .btn3{
+        font-size: 70%;
+        margin-top: 1%;
+        margin-top: 1%;
+    }
+
+    .btn2{
+        padding: 1%;
+        font-size: 70%;
+        width: 15%;
+        height: 10%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+}
+
+@media all and (max-height: 480px){
+
+    br{
+        line-height: 5px;
+    }
+
+    header{
+        position: relative;
+    }
+
+    footer{
+        position: relative;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .modalcontainer{
+        position: relative;
+    }
+}
+
+@media all and (min-width: 950px){
+    .facebook{
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    footer{
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 1%;
+    }
+
+    a{
+        margin: auto;
+    }
+}
+
+
